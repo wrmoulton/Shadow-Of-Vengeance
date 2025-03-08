@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyPatrol : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class EnemyPatrol : MonoBehaviour
     public float visionLength = 5f;
     public float visionAngle = 40f;
     public LayerMask obstacleLayer;
-
+    public GameObject gameOverScreen; // Assign this in the Inspector
     private int currentPointIndex = 0;
     public bool isPaused = false;
     private int facingDirection = 1; // 1 for right, -1 for left
@@ -61,6 +62,7 @@ public class EnemyPatrol : MonoBehaviour
             {
                 Debug.Log("Raycast hit: " + hit.collider.gameObject.name);
                 isPaused = true;
+                TriggerGameOver(); // Call Game Over method
             }
             else
             {
@@ -111,5 +113,23 @@ public class EnemyPatrol : MonoBehaviour
         mesh.vertices = vertices;
         mesh.triangles = triangles;
         return mesh;
+    }
+
+    void TriggerGameOver()
+    {
+        if (gameOverScreen != null)
+        {
+            gameOverScreen.SetActive(true); // Show Game Over screen
+        }
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Reload full scene
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }

@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,2023 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Control Scheme_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 321
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69c9a7e1dd87ad489c558267aacc8a8
+      internalID: 1933103943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 321
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02f7817071ad10d41a68c07b204a8627
+      internalID: 1771592544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_2
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 321
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bf19f9e28ffe6b479cd3589607f16ca
+      internalID: 233246266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 321
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285f8022c5baad148935adfb608b5c2f
+      internalID: 1011611544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_4
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 321
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa26936826d7fc45b6fe2e46ba61e0d
+      internalID: 385073299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_5
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 317
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0846e46df12876e4eab879143c1629e6
+      internalID: -1809768870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_6
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 321
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0612b1b2e2e3964aab9debef05f9abd
+      internalID: 828926024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_7
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 321
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4920d43d36fa0b94196caed117b2f0bf
+      internalID: -352854829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_8
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 321
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ff5730d3ae4ef4aaac24e4ca676bde
+      internalID: -689758326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_9
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 317
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c40125e9dd03184391cb252060d53e4
+      internalID: 2051701956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_10
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 284
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b1c214199fa97d43bc7e725b0709cf5
+      internalID: -1363482455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_11
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 309
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e430efc9994281e449b3d325e7b9e41e
+      internalID: 1451323573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_12
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 309
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 699f26b8cd911e84a83c101612878204
+      internalID: -408866895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_13
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 309
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 439e7b5276dca34469990c5a16b6aebc
+      internalID: -37325860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_14
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 301
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e021bf0b0b8184e85774e6f63a0c55
+      internalID: 1214315389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_15
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 301
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f75879dd6a66a2d4284d76843c17455e
+      internalID: 815118196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_16
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 301
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d5381404cbed144b14d9984244513f
+      internalID: -1521918820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_17
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 301
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d55fbca718cfe42b8bd04bc8960fd7
+      internalID: 2129490751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_18
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 301
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434cc535f5b3b7c478bcd0987ba8130c
+      internalID: 423837423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_19
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 297
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43eec98105eedcb4e821d1af6e375f69
+      internalID: -572430076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_20
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 297
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326050f207dff114fbe923c8976f9b56
+      internalID: -1149536227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_21
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 301
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5db39f16505600f4b977377a0c6d64d0
+      internalID: -1859692525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_22
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 301
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c8e5bc61bb9b840a200f930be9f38e
+      internalID: 1403910365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_23
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 301
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e9b2f3a94b4e8c429905618f8a02cea
+      internalID: 569126740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_24
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 301
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ab171e6daca81479de305c44eaad98
+      internalID: -1313320285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_25
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 301
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4fecc9e6385fe43906a6f608a41856
+      internalID: 1223907665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_26
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 301
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 605e79190cf58404b916819c0a6d1715
+      internalID: -1375691031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_27
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 309
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4a42b2ea7e83b4399456661d88c874
+      internalID: -849297101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_28
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 309
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49e98baaab7e6d548af4f274b3faef74
+      internalID: -685581299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_29
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 309
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9ed496bcffa44344810514498c0f9b1
+      internalID: -540103826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_30
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 309
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf578add5b406945890d14612194091
+      internalID: 2113235305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_31
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 309
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97913b4a7750c046b29b2f493b3eeb9
+      internalID: 1806705713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_32
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 280
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84565b81074013c46a43bcc9d5f8f516
+      internalID: 1758015643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_33
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 280
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e42c527d2c5cf449ae5da9b66b712c0
+      internalID: 1501617751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_34
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 280
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c4d5a151e4ace64a965abd3e96433f2
+      internalID: 1738029528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_35
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 280
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50bb6511ca32cc949bfbb8bf32e10a55
+      internalID: -1372397613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_36
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 280
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1169f1b32a658e4694467076c8cd6d2
+      internalID: 1851287639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_37
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 280
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e20dc9f742de8c4439626469ae13d14c
+      internalID: -1428287505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_38
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 280
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0933502f345ecc8419e6a4d2c4f610bb
+      internalID: -1288865310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_39
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 280
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 460441e467501c34c87a5f845826c663
+      internalID: 1639484027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_40
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 280
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 851c59b3cb55ee54aa933ff1c36fcca4
+      internalID: -1756374534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_41
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 280
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22cad8983bda08145986765b0ea60ef9
+      internalID: 1894219776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_42
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 280
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d51ffd39459c94caba900da27a6b22
+      internalID: -178171036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_43
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 255
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f749dbf950d2efd46af8a00a59dc55c0
+      internalID: -413473171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_44
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 259
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d58c9e95ceee724dbd75ead1c85ae5c
+      internalID: 1564159946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_45
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 259
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b20f3bec1c85c247a45fafea9bb15d7
+      internalID: 1967013247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_46
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 259
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ae39c66365d0c439dfcd1190c764cf
+      internalID: 793054743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_47
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 259
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3024a1e66914d434d9ea9ebd364b1089
+      internalID: 1973252227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_48
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 259
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f11a64788bb04f4385d1584b15087fe
+      internalID: 1181381292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_49
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 255
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a6de4d5ccdc054ba84433eac733a62
+      internalID: -337340572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_50
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 259
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e47e7c2db7dd36c428b33288154b7d31
+      internalID: -275438082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_51
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 259
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7caca553fb9c6c44096aa7834fb9aeba
+      internalID: -953786752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_52
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 259
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f35440fc76805b45b988d30c1b0e51a
+      internalID: -781577522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_53
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 259
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f911659224624c4fab28a4d5f6cb0d1
+      internalID: -2132721076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_54
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 202
+        width: 83
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb616bb7fcef0546939c97d3166d451
+      internalID: -2019998591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_55
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 177
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aae67959b6ebe74b9f7ab29a2970dd9
+      internalID: 559933625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_56
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 219
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d43ea5c5620ed84c89dd66d87e03b73
+      internalID: -1625087095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_57
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 219
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f0bd968560719147a210f16bf518ed8
+      internalID: -1468644465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_58
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 219
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d40657522c9fe4946a36145fedc6967e
+      internalID: 4590763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_59
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 219
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b900fd0c84cf6bc46b201a515d2695dd
+      internalID: -397007060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_60
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 219
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a4e21bfab16c1f41bf26c680ecedc78
+      internalID: -887523169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_61
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 219
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0149ccb55cfd4734c9f2d48106af276b
+      internalID: -1804540343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_62
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 219
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdceb8e0494393648a06b38cff8d0412
+      internalID: -1958008316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_63
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 219
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ead005281a70574ab63f4258e7b8d07
+      internalID: 1760363986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_64
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 215
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b47045fd542c8c4ca7b3c77e8d4a72f
+      internalID: 1297235864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_65
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 108
+        width: 61
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8fa4763f1f81fc40be9d31a4ce1614d
+      internalID: 1129308456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_66
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 108
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509c5aadfbe62f54185e305e1e01758b
+      internalID: -1630249254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_67
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 108
+        width: 61
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bebccd66e2d1a54aabee496fed4e700
+      internalID: -236303265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_68
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 109
+        width: 182
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d9d666c8719e448a6f8fbcf3601c06
+      internalID: 1435877656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_69
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 82
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80dc6f39ee421cc4e92682d065214ab9
+      internalID: 1929814086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_70
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 82
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97aaaa239956df04283dc8ab7bfbc4a3
+      internalID: -174639743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_71
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 82
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee20d9fa8f76d7b45a690c4e677506da
+      internalID: 998835169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_72
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 82
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a6cb60fcdc56343a43a299694d981a
+      internalID: 260755459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_73
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 82
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e278498eed1464aa32aa841ff835dc
+      internalID: 1078045800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_74
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 82
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 699fdce0bc1dde2488e1d5794f819679
+      internalID: -1632690191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_75
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 82
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eceae7ab10258d4ea996ebf29019d1e
+      internalID: -1602700593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_76
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 82
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0682cd0ea151ab947a7902be68a71cd5
+      internalID: -1569965801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_77
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 83
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd35980bf5928f54592f36564eecc3a2
+      internalID: -558640331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_78
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 83
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c75af5609b9998f43966be2371a631cf
+      internalID: 558670573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_79
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 83
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee95221ba3287c48b32ee96739c66a0
+      internalID: 2102448619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_80
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 83
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d67c2affe38b1443b2f1a48e87a740d
+      internalID: 1091456694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_81
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 83
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088210d758a9da2498853525497a4a93
+      internalID: -1384103620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_82
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 83
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab6e560f25ff5064e8c573374629c447
+      internalID: -1209433294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_83
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 83
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5759d19d2f7004b98cebf37bca4424
+      internalID: 711543642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_84
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 83
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 060646dbb4939f24bbc4b647ff67a088
+      internalID: 509771131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_85
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 7
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1104a504df4c2ca499512377d92ffe72
+      internalID: -1848082568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_86
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 36
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994bcc3ff3a8be24d8e049626310f5ea
+      internalID: -1045294331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_87
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 36
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d28b72866b86ec641bb52f069c8c4e2f
+      internalID: 446542995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_88
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 36
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73e461ec17d6c848acd501931bbe6be
+      internalID: -1790841919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_89
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 32
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31059f6323237ec43871e025e1b292b7
+      internalID: -658852476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_90
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 36
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7cc1ef2892fbe4ebedc9133c3dc33f
+      internalID: -2119323776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_91
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 36
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283c4bfb16404a847a043e89178edf96
+      internalID: -1531696951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_92
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 36
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 080922248837a6b47b28ea2f42b83226
+      internalID: 141015031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_93
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 14
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3361b6f5ef0d2c4aaa3bbd3b2c1ba21
+      internalID: -2099242664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_94
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 14
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d91925ae0bc0649bf0a9b35578b0c6
+      internalID: -194753864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Control Scheme_95
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 11
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b72ebbecee80f34099fa51e11fbcad8
+      internalID: 73050333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +2135,103 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Control Scheme_0: 1933103943
+      Control Scheme_1: 1771592544
+      Control Scheme_10: -1363482455
+      Control Scheme_11: 1451323573
+      Control Scheme_12: -408866895
+      Control Scheme_13: -37325860
+      Control Scheme_14: 1214315389
+      Control Scheme_15: 815118196
+      Control Scheme_16: -1521918820
+      Control Scheme_17: 2129490751
+      Control Scheme_18: 423837423
+      Control Scheme_19: -572430076
+      Control Scheme_2: 233246266
+      Control Scheme_20: -1149536227
+      Control Scheme_21: -1859692525
+      Control Scheme_22: 1403910365
+      Control Scheme_23: 569126740
+      Control Scheme_24: -1313320285
+      Control Scheme_25: 1223907665
+      Control Scheme_26: -1375691031
+      Control Scheme_27: -849297101
+      Control Scheme_28: -685581299
+      Control Scheme_29: -540103826
+      Control Scheme_3: 1011611544
+      Control Scheme_30: 2113235305
+      Control Scheme_31: 1806705713
+      Control Scheme_32: 1758015643
+      Control Scheme_33: 1501617751
+      Control Scheme_34: 1738029528
+      Control Scheme_35: -1372397613
+      Control Scheme_36: 1851287639
+      Control Scheme_37: -1428287505
+      Control Scheme_38: -1288865310
+      Control Scheme_39: 1639484027
+      Control Scheme_4: 385073299
+      Control Scheme_40: -1756374534
+      Control Scheme_41: 1894219776
+      Control Scheme_42: -178171036
+      Control Scheme_43: -413473171
+      Control Scheme_44: 1564159946
+      Control Scheme_45: 1967013247
+      Control Scheme_46: 793054743
+      Control Scheme_47: 1973252227
+      Control Scheme_48: 1181381292
+      Control Scheme_49: -337340572
+      Control Scheme_5: -1809768870
+      Control Scheme_50: -275438082
+      Control Scheme_51: -953786752
+      Control Scheme_52: -781577522
+      Control Scheme_53: -2132721076
+      Control Scheme_54: -2019998591
+      Control Scheme_55: 559933625
+      Control Scheme_56: -1625087095
+      Control Scheme_57: -1468644465
+      Control Scheme_58: 4590763
+      Control Scheme_59: -397007060
+      Control Scheme_6: 828926024
+      Control Scheme_60: -887523169
+      Control Scheme_61: -1804540343
+      Control Scheme_62: -1958008316
+      Control Scheme_63: 1760363986
+      Control Scheme_64: 1297235864
+      Control Scheme_65: 1129308456
+      Control Scheme_66: -1630249254
+      Control Scheme_67: -236303265
+      Control Scheme_68: 1435877656
+      Control Scheme_69: 1929814086
+      Control Scheme_7: -352854829
+      Control Scheme_70: -174639743
+      Control Scheme_71: 998835169
+      Control Scheme_72: 260755459
+      Control Scheme_73: 1078045800
+      Control Scheme_74: -1632690191
+      Control Scheme_75: -1602700593
+      Control Scheme_76: -1569965801
+      Control Scheme_77: -558640331
+      Control Scheme_78: 558670573
+      Control Scheme_79: 2102448619
+      Control Scheme_8: -689758326
+      Control Scheme_80: 1091456694
+      Control Scheme_81: -1384103620
+      Control Scheme_82: -1209433294
+      Control Scheme_83: 711543642
+      Control Scheme_84: 509771131
+      Control Scheme_85: -1848082568
+      Control Scheme_86: -1045294331
+      Control Scheme_87: 446542995
+      Control Scheme_88: -1790841919
+      Control Scheme_89: -658852476
+      Control Scheme_9: 2051701956
+      Control Scheme_90: -2119323776
+      Control Scheme_91: -1531696951
+      Control Scheme_92: 141015031
+      Control Scheme_93: -2099242664
+      Control Scheme_94: -194753864
+      Control Scheme_95: 73050333
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

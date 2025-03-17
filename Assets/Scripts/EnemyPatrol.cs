@@ -81,14 +81,14 @@ public class EnemyPatrol : MonoBehaviour
 {
     if (player == null || playerShadowForm == null)
     {
-        Debug.LogWarning("Player or playerShadowForm reference is missing!");
+        //Debug.LogWarning("Player or playerShadowForm reference is missing!");
         return;
     }
 
     // Skip detection if the player is in shadow form
     if (playerShadowForm.isShadowForm)
     {
-        Debug.Log("Player is in shadow form. Skipping detection.");
+        //Debug.Log("Player is in shadow form. Skipping detection.");
         ResetDetection();
         return;
     }
@@ -100,7 +100,6 @@ public class EnemyPatrol : MonoBehaviour
     Vector2 enemyForward = facingDirection == 1 ? Vector2.right : Vector2.left;
     float angleToPlayer = Vector2.Angle(enemyForward, directionToPlayer);
 
-    Debug.Log($"Angle to player: {angleToPlayer}, Distance to player: {distanceToPlayer}, Facing direction: {facingDirection}");
 
     if (angleToPlayer < visionAngle / 2 && distanceToPlayer <= visionLength)
     {
@@ -119,7 +118,7 @@ public class EnemyPatrol : MonoBehaviour
 
         if (playerDetected)
         {
-            Debug.Log("Player detected in vision cone.");
+            //Debug.Log("Player detected in vision cone.");
             isPlayerDetected = true;
 
             // Player is in vision cone and not blocked by obstacles
@@ -134,19 +133,19 @@ public class EnemyPatrol : MonoBehaviour
             // If detection is complete, trigger game over
             if (currentDetection >= 1f)
             {
-                Debug.Log("Player fully detected. Triggering game over.");
+                //Debug.Log("Player fully detected. Triggering game over.");
                 TriggerGameOver();
             }
         }
         else
         {
-            Debug.Log("Player not detected or blocked by an obstacle.");
+            //Debug.Log("Player not detected or blocked by an obstacle.");
             isPlayerDetected = false;
         }
     }
     else
     {
-        Debug.Log("Player outside vision cone.");
+        //Debug.Log("Player outside vision cone.");
         isPlayerDetected = false;
     }
 

@@ -7,7 +7,7 @@ public class LevelOne : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
+        Debug.Log("Triggering Scene!");
         SceneManager.LoadScene(sceneName);
 
     }

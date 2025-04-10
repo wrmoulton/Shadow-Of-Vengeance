@@ -1,10 +1,13 @@
 using UnityEngine;
+using TMPro;
 
 public class DoorKey : MonoBehaviour
 {
     public GameObject doorPartToDisable; // Assign tilesStuff_43 in the Inspector
     public AudioSource doorSound;
     private bool isUnlocked = false; // Prevents multiple triggers
+    public TMP_Text messageText; // Assign in Inspector
+    public float messageDuration = 2f; // How long the message shows
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -13,6 +16,11 @@ public class DoorKey : MonoBehaviour
         {
              Debug.Log("Player has the key! Opening the door...");
             OpenDoor();
+        }
+        else
+        {
+            Debug.Log("Player doesn't have key!");
+            DoorClosed();
         }
     }
 
@@ -29,4 +37,21 @@ public class DoorKey : MonoBehaviour
             doorSound.Play();
         }
     }
+    void DoorClosed()
+    {
+        if (messageText != null)
+        {
+            messageText.text = "The door is locked. You need a key!";
+            CancelInvoke(nameof(ClearMessage));
+            Invoke(nameof(ClearMessage), messageDuration); // Clear after a delay
+        }
+    }
+    void ClearMessage()
+    {
+        if (messageText != null)
+        {
+            messageText.text = "";
+        }
+    }
+
 }

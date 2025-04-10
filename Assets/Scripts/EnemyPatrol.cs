@@ -249,13 +249,15 @@ public class EnemyPatrol : MonoBehaviour
         if (gameOverScreen != null)
         {
             gameOverScreen.SetActive(true); // Show Game Over screen
+            Time.timeScale = 0f;
         }
     }
 
     public void RestartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Reload full scene
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); // No need to reset time here anymore
     }
+
 
     public void QuitGame()
     {

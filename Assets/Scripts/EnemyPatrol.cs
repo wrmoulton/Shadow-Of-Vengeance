@@ -23,6 +23,8 @@ public class EnemyPatrol : MonoBehaviour
     public float detectionDecreaseRate = 2f;
     private bool isPlayerDetected = false;
 
+    public Transform visionOrigin;
+
     void Start()
     {
         // Find the player's ShadowFormController script
@@ -78,51 +80,82 @@ public class EnemyPatrol : MonoBehaviour
     }
 
     void CheckVision()
-{
-    if (player == null || playerShadowForm == null)
     {
-        //Debug.LogWarning("Player or playerShadowForm reference is missing!");
-        return;
-    }
-
-    // Skip detection if the player is in shadow form
-    if (playerShadowForm.isShadowForm)
-    {
-        //Debug.Log("Player is in shadow form. Skipping detection.");
-        ResetDetection();
-        return;
-    }
-
-    Vector2 directionToPlayer = (player.position - transform.position).normalized;
-    float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-
-    // Calculate the enemy's forward direction
-    Vector2 enemyForward = facingDirection == 1 ? Vector2.right : Vector2.left;
-    float angleToPlayer = Vector2.Angle(enemyForward, directionToPlayer);
-
-
-    if (angleToPlayer < visionAngle / 2 && distanceToPlayer <= visionLength)
-    {
-        // Use OverlapCircle to detect the player
-        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, visionLength);
-
-        bool playerDetected = false;
-        foreach (Collider2D hit in hits)
+        if (player == null || playerShadowForm == null)
         {
-            if (hit.transform == player)
-            {
-                playerDetected = true;
-                break;
-            }
+            //Debug.LogWarning("Player or playerShadowForm reference is missing!");
+            return;
         }
 
-        if (playerDetected)
+        // Skip detection if the player is in shadow form
+        if (playerShadowForm.isShadowForm)
         {
-            //Debug.Log("Player detected in vision cone.");
-            isPlayerDetected = true;
+            //Debug.Log("Player is in shadow form. Skipping detection.");
+            ResetDetection();
+            return;
+        }
 
-            // Player is in vision cone and not blocked by obstacles
-            currentDetection += Time.deltaTime / detectionTime;
+        Vector2 directionToPlayer = (player.position - visionOrigin.position).normalized;
+        float distanceToPlayer = Vector2.Distance(visionOrigin.position, player.position);
+
+        // Calculate the enemy's forward direction
+        Vector2 enemyForward = facingDirection == 1 ? Vector2.right : Vector2.left;
+        float angleToPlayer = Vector2.Angle(enemyForward, directionToPlayer);
+
+
+        if (angleToPlayer < visionAngle / 2 && distanceToPlayer <= visionLength)
+        {
+            // Use OverlapCircle to detect the player
+            Collider2D[] hits = Physics2D.OverlapCircleAll(visionOrigin.position, visionLength);
+
+            bool playerDetected = false;
+            foreach (Collider2D hit in hits)
+            {
+                if (hit.transform == player)
+                {
+                    playerDetected = true;
+                    break;
+                }
+            }
+
+            if (playerDetected)
+            {
+                //Debug.Log("Player detected in vision cone.");
+                isPlayerDetected = true;
+
+                // Player is in vision cone and not blocked by obstacles
+                currentDetection += Time.deltaTime / detectionTime;
+
+                // Update detection fill UI
+                if (detectionFill != null)
+                {
+                    detectionFill.fillAmount = currentDetection;
+                }
+
+                // If detection is complete, trigger game over
+                if (currentDetection >= 1f)
+                {
+                    //Debug.Log("Player fully detected. Triggering game over.");
+                    TriggerGameOver();
+                }
+            }
+            else
+            {
+                //Debug.Log("Player not detected or blocked by an obstacle.");
+                isPlayerDetected = false;
+            }
+        }
+        else
+        {
+            //Debug.Log("Player outside vision cone.");
+            isPlayerDetected = false;
+        }
+
+        // Decrease indicator if the player is not detected
+        if (!isPlayerDetected && currentDetection > 0)
+        {
+            currentDetection -= Time.deltaTime / detectionDecreaseRate;
+            currentDetection = Mathf.Clamp(currentDetection, 0, 1);
 
             // Update detection fill UI
             if (detectionFill != null)
@@ -130,78 +163,47 @@ public class EnemyPatrol : MonoBehaviour
                 detectionFill.fillAmount = currentDetection;
             }
 
-            // If detection is complete, trigger game over
-            if (currentDetection >= 1f)
+            // Hide the DetectionIndicator when detection reaches 0
+            if (currentDetection <= 0)
             {
-                //Debug.Log("Player fully detected. Triggering game over.");
-                TriggerGameOver();
+                detectionFill.fillAmount = 0f;
+            }
+        }
+    }
+
+
+    void ResetDetection()
+    {
+        // Gradually decrease detection progress
+        if (currentDetection > 0)
+        {
+            currentDetection -= Time.deltaTime / detectionDecreaseRate;
+            currentDetection = Mathf.Clamp(currentDetection, 0, 1); // Ensure it doesn't go below 0
+
+            // Update detection fill UI
+            if (detectionFill != null)
+            {
+                detectionFill.fillAmount = currentDetection;
+            }
+
+            // Hide the indicator when detection reaches 0
+            if (currentDetection <= 0)
+            {
+                detectionFill.fillAmount = 0f;
             }
         }
         else
         {
-            //Debug.Log("Player not detected or blocked by an obstacle.");
-            isPlayerDetected = false;
+            // Reset detection progress
+            currentDetection = 0f;
+
+            // Hide the DetectionIndicator
+            if (detectionFill != null)
+            {
+                detectionFill.fillAmount = 0f;
+            }
         }
     }
-    else
-    {
-        //Debug.Log("Player outside vision cone.");
-        isPlayerDetected = false;
-    }
-
-    // Decrease indicator if the player is not detected
-    if (!isPlayerDetected && currentDetection > 0)
-    {
-        currentDetection -= Time.deltaTime / detectionDecreaseRate;
-        currentDetection = Mathf.Clamp(currentDetection, 0, 1); 
-
-        // Update detection fill UI
-        if (detectionFill != null)
-        {
-            detectionFill.fillAmount = currentDetection;
-        }
-
-        // Hide the DetectionIndicator when detection reaches 0
-        if (currentDetection <= 0)
-        {
-            detectionFill.fillAmount = 0f;
-        }
-    }
-}
-
-
-    void ResetDetection()
-{
-    // Gradually decrease detection progress
-    if (currentDetection > 0)
-    {
-        currentDetection -= Time.deltaTime / detectionDecreaseRate;
-        currentDetection = Mathf.Clamp(currentDetection, 0, 1); // Ensure it doesn't go below 0
-
-        // Update detection fill UI
-        if (detectionFill != null)
-        {
-            detectionFill.fillAmount = currentDetection;
-        }
-
-        // Hide the indicator when detection reaches 0
-        if (currentDetection <= 0)
-        {
-            detectionFill.fillAmount = 0f;
-        }
-    }
-    else
-    {
-        // Reset detection progress
-        currentDetection = 0f;
-
-        // Hide the DetectionIndicator
-        if (detectionFill != null)
-        {
-            detectionFill.fillAmount = 0f;
-        }
-    }
-}
 
     // **Draw Vision Cone in Scene View**
     void OnDrawGizmos()
@@ -223,13 +225,13 @@ public class EnemyPatrol : MonoBehaviour
         Vector3 rightEdge = transform.position + rightBoundary * visionLength;
 
         // Draw the vision cone as a solid shape
-        Gizmos.DrawLine(transform.position, leftEdge);
-        Gizmos.DrawLine(transform.position, rightEdge);
-        Gizmos.DrawWireSphere(transform.position + forward * visionLength, 0.1f); // Small circle at max range
+        Gizmos.DrawLine(visionOrigin.position, leftEdge);
+        Gizmos.DrawLine(visionOrigin.position, rightEdge);
+        Gizmos.DrawWireSphere(visionOrigin.position + forward * visionLength, 0.1f); // Small circle at max range
 
         // Fill the cone using a triangle
         Gizmos.color = new Color(1, 1, 0, 0.1f); // Even more transparent yellow
-        Vector3[] coneVertices = { transform.position, leftEdge, rightEdge };
+        Vector3[] coneVertices = { visionOrigin.position, leftEdge, rightEdge };
         Gizmos.DrawMesh(CreateMesh(coneVertices));
     }
 
@@ -261,4 +263,5 @@ public class EnemyPatrol : MonoBehaviour
     {
         Application.Quit();
     }
+
 }

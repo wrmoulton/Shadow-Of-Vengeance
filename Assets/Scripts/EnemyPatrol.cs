@@ -83,14 +83,12 @@ public class EnemyPatrol : MonoBehaviour
     {
         if (player == null || playerShadowForm == null)
         {
-            //Debug.LogWarning("Player or playerShadowForm reference is missing!");
             return;
         }
 
         // Skip detection if the player is in shadow form
         if (playerShadowForm.isShadowForm)
         {
-            //Debug.Log("Player is in shadow form. Skipping detection.");
             ResetDetection();
             return;
         }
@@ -102,52 +100,60 @@ public class EnemyPatrol : MonoBehaviour
         Vector2 enemyForward = facingDirection == 1 ? Vector2.right : Vector2.left;
         float angleToPlayer = Vector2.Angle(enemyForward, directionToPlayer);
 
-
+        // Check if player is within vision cone
         if (angleToPlayer < visionAngle / 2 && distanceToPlayer <= visionLength)
         {
             // Use OverlapCircle to detect the player
             Collider2D[] hits = Physics2D.OverlapCircleAll(visionOrigin.position, visionLength);
 
-            bool playerDetected = false;
+            bool playerDetectedInOverlap = false;
             foreach (Collider2D hit in hits)
             {
                 if (hit.transform == player)
                 {
-                    playerDetected = true;
+                    playerDetectedInOverlap = true;
                     break;
                 }
             }
 
-            if (playerDetected)
+            if (playerDetectedInOverlap)
             {
-                //Debug.Log("Player detected in vision cone.");
-                isPlayerDetected = true;
+                // **NEW**: Line-of-sight check (Raycast) for obstacles
+                RaycastHit2D hitInfo = Physics2D.Raycast(
+                    visionOrigin.position,
+                    directionToPlayer,
+                    distanceToPlayer,
+                    obstacleLayer
+                );
 
-                // Player is in vision cone and not blocked by obstacles
-                currentDetection += Time.deltaTime / detectionTime;
-
-                // Update detection fill UI
-                if (detectionFill != null)
+                if (hitInfo.collider == null)
                 {
-                    detectionFill.fillAmount = currentDetection;
+                    // Means Raycast hit nothing, so no obstacle is in the way
+                    // => we can see the player
+                    isPlayerDetected = true;
+
+                    currentDetection += Time.deltaTime / detectionTime;
+                    if (detectionFill != null)
+                        detectionFill.fillAmount = currentDetection;
+
+                    if (currentDetection >= 1f)
+                    {
+                        TriggerGameOver();
+                    }
                 }
-
-                // If detection is complete, trigger game over
-                if (currentDetection >= 1f)
+                else
                 {
-                    //Debug.Log("Player fully detected. Triggering game over.");
-                    TriggerGameOver();
+                    // Raycast hit something, presumably a wall or obstacle
+                    isPlayerDetected = false;
                 }
             }
             else
             {
-                //Debug.Log("Player not detected or blocked by an obstacle.");
                 isPlayerDetected = false;
             }
         }
         else
         {
-            //Debug.Log("Player outside vision cone.");
             isPlayerDetected = false;
         }
 
@@ -157,20 +163,12 @@ public class EnemyPatrol : MonoBehaviour
             currentDetection -= Time.deltaTime / detectionDecreaseRate;
             currentDetection = Mathf.Clamp(currentDetection, 0, 1);
 
-            // Update detection fill UI
             if (detectionFill != null)
             {
                 detectionFill.fillAmount = currentDetection;
             }
-
-            // Hide the DetectionIndicator when detection reaches 0
-            if (currentDetection <= 0)
-            {
-                detectionFill.fillAmount = 0f;
-            }
         }
     }
-
 
     void ResetDetection()
     {

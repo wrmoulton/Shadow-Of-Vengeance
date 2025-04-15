@@ -15,7 +15,7 @@ public class CardReader : MonoBehaviour
     {
         PlayerInventory playerInventory = other.GetComponent<PlayerInventory>();
 
-        if (!isUnlocked && playerInventory != null && playerInventory.hasCard)
+        if (!isUnlocked && playerInventory != null && playerInventory.hasKeyCard)
         {
             Unlock();
             Debug.Log("Playing Anim");

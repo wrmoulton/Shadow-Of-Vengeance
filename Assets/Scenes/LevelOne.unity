@@ -126116,6 +126116,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e14a57e944d3147fe8e9713f83867aa2, type: 3}
+--- !u!4 &1809092056 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4097118419585048776, guid: e14a57e944d3147fe8e9713f83867aa2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1809092055}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1809117699
 GameObject:
   m_ObjectHideFlags: 0
@@ -127071,6 +127077,11 @@ PrefabInstance:
       propertyPath: visionLength
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4469785379005464943, guid: 450fc432e485748bc9e790a5a8070d41,
+        type: 3}
+      propertyPath: visionOrigin
+      value: 
+      objectReference: {fileID: 1809092056}
     - target: {fileID: 4469785379005464943, guid: 450fc432e485748bc9e790a5a8070d41,
         type: 3}
       propertyPath: detectionFill
@@ -128506,6 +128517,11 @@ PrefabInstance:
       propertyPath: visionLength
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4469785379005464943, guid: e2a91eb27e4c74ac2a42edab93adef9b,
+        type: 3}
+      propertyPath: visionOrigin
+      value: 
+      objectReference: {fileID: 1809092056}
     - target: {fileID: 4469785379005464943, guid: e2a91eb27e4c74ac2a42edab93adef9b,
         type: 3}
       propertyPath: detectionFill

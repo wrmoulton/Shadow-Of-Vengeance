@@ -18,7 +18,17 @@ public class ShadowFormController1 : MonoBehaviour
     [SerializeField] private float energyDepletionRate = 10f; // Energy depletion rate per second
     [SerializeField] private float energyRechargeRate = 5f; // Energy recharge rate per second
     [SerializeField] private Slider shadowEnergyBar; // Reference to UI Slider
+    [SerializeField] private Animator transitionAnimator;
+    [SerializeField] private ShadowMeter shadowMeter;
 
+    [Header("Energy Settings")]
+    [SerializeField] private float emptyStateDelay = 1.0f; // Time to stay empty before recharging
+    private float lastEmptyTime;
+    private bool isEnergyDepleted;
+
+    [SerializeField] private ShadowFXController fXController;
+
+    
     private float currentShadowEnergy; // Current shadow energy
     public bool isShadowForm = false; // Tracks whether player is in shadow form
 
@@ -54,13 +64,21 @@ public class ShadowFormController1 : MonoBehaviour
             ToggleShadowForm();
         }
 
+        if (isEnergyDepleted){
+            if (Time.time - lastEmptyTime >= emptyStateDelay){
+                isEnergyDepleted = false;
+                currentShadowEnergy = 0;
+            }
+            return;
+        }
+
         // Handle energy depletion and recharge 
         //TODO: Will need to change to collecting items to gain energy
         if (isShadowForm)
         {
             DepleteEnergy();
         }
-        else
+        else if (!isEnergyDepleted)
         {
             RechargeEnergy();
         }
@@ -70,6 +88,13 @@ public class ShadowFormController1 : MonoBehaviour
         {
             shadowEnergyBar.value = currentShadowEnergy;
         }
+        
+        // Update the energy bar
+        if (shadowMeter != null)
+        {
+            shadowMeter.UpdateMeter(currentShadowEnergy, maxShadowEnergy);
+        }
+        
     }
 
     void ToggleShadowForm()
@@ -77,12 +102,18 @@ public class ShadowFormController1 : MonoBehaviour
         // Toggle between shadow and normal form
         isShadowForm = !isShadowForm;
 
+        if (transitionAnimator != null){
+            transitionAnimator.SetBool("IsShadowForm", isShadowForm);
+        }
+
         if (isShadowForm)
         {
             // Apply shadow form: darker tint and lower opacity
             shadowColor = shadowTint;
             shadowColor.a = shadowOpacity;
             spriteRenderer.color = shadowColor;
+            fXController.PlayTransformFX();
+            
 
             // Disable collision with ShadowWall objects
             Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("ShadowWall"), true);
@@ -95,6 +126,8 @@ public class ShadowFormController1 : MonoBehaviour
             // Re-enable collision with ShadowWall objects
             Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("ShadowWall"), false);
         }
+
+
     }
 
     void DepleteEnergy()
@@ -106,6 +139,8 @@ public class ShadowFormController1 : MonoBehaviour
         if (currentShadowEnergy <= 0)
         {
             currentShadowEnergy = 0;
+            isEnergyDepleted = true;
+            lastEmptyTime = Time.time;
             ToggleShadowForm();
         }
     }

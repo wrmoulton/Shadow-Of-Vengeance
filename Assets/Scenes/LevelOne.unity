@@ -976,8 +976,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10050,8 +10050,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -17535,8 +17535,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -18840,7 +18840,7 @@ GameObject:
   - component: {fileID: 1293800472}
   - component: {fileID: 1293800474}
   - component: {fileID: 1293800473}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: tileset x2_0 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123119,7 +123119,7 @@ GameObject:
   - component: {fileID: 1671195997}
   - component: {fileID: 1671195999}
   - component: {fileID: 1671195998}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: tileset x2_0 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125743,6 +125743,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4469785379005464943, guid: e14a57e944d3147fe8e9713f83867aa2,
         type: 3}
+      propertyPath: speed
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469785379005464943, guid: e14a57e944d3147fe8e9713f83867aa2,
+        type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 2007969251}
@@ -125816,12 +125821,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e14a57e944d3147fe8e9713f83867aa2, type: 3}
---- !u!4 &1809092056 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4097118419585048776, guid: e14a57e944d3147fe8e9713f83867aa2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1809092055}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1809117699
 GameObject:
   m_ObjectHideFlags: 0
@@ -128923,6 +128922,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasKey: 0
   hasCard: 0
+  hasKeyCard: 0
+  Card: {fileID: 0}
 --- !u!114 &2007969256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129167,7 +129168,7 @@ GameObject:
   - component: {fileID: 2021199470}
   - component: {fileID: 2021199472}
   - component: {fileID: 2021199471}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: tileset x2_0 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

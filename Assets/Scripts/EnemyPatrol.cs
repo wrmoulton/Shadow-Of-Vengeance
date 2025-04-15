@@ -25,6 +25,9 @@ public class EnemyPatrol : MonoBehaviour
 
     public Transform visionOrigin;
 
+    private Vector3? lastKnownPlayerPosition = null;
+    private bool isInvestigating = false;
+
     void Start()
     {
         // Find the player's ShadowFormController script
@@ -42,6 +45,12 @@ public class EnemyPatrol : MonoBehaviour
 
     void Update()
     {
+        if (isInvestigating)
+        {
+            InvestigateLastKnownPosition();
+            return;
+        }
+
         if (!isPaused)
         {
             Patrol();
@@ -78,6 +87,36 @@ public class EnemyPatrol : MonoBehaviour
             currentPointIndex = (currentPointIndex + 1) % patrolPoints.Length;
         }
     }
+
+    void InvestigateLastKnownPosition()
+    {
+        if (lastKnownPlayerPosition == null) return;
+
+        Vector2 direction = ((Vector2)lastKnownPlayerPosition.Value - (Vector2)transform.position).normalized;
+        float distance = Vector2.Distance(transform.position, lastKnownPlayerPosition.Value);
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, distance, obstacleLayer);
+
+        if (hit.collider == null)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, lastKnownPlayerPosition.Value, speed * Time.deltaTime);
+        }
+        else
+        {
+            lastKnownPlayerPosition = null;
+            isInvestigating = false;
+            isPaused = false;
+        }
+
+        if (Vector2.Distance(transform.position, lastKnownPlayerPosition.Value) < 0.1f)
+        {
+            lastKnownPlayerPosition = null;
+            isInvestigating = false;
+            isPaused = false;
+        }
+    }
+
+
 
     void CheckVision()
     {
@@ -131,6 +170,8 @@ public class EnemyPatrol : MonoBehaviour
                     // Means Raycast hit nothing, so no obstacle is in the way
                     // => we can see the player
                     isPlayerDetected = true;
+                    lastKnownPlayerPosition = player.position;
+                    isInvestigating = false;
 
                     currentDetection += Time.deltaTime / detectionTime;
                     if (detectionFill != null)
@@ -167,6 +208,12 @@ public class EnemyPatrol : MonoBehaviour
             {
                 detectionFill.fillAmount = currentDetection;
             }
+        }
+
+        if (!isPlayerDetected && lastKnownPlayerPosition != null && !isInvestigating)
+        {
+            isPaused = true;           // Pause patrol
+            isInvestigating = true;    // Start investigation behavior
         }
     }
 

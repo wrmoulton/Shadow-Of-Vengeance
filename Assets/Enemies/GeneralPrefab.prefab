@@ -178,12 +178,12 @@ MonoBehaviour:
   - {fileID: 5195168370850891687}
   - {fileID: 4566959699485091154}
   player: {fileID: 0}
-  speed: 1.2
+  speed: 1.4
   visionLength: 2.8
   visionAngle: 100
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 7340222
+    m_Bits: 7340478
   gameOverScreen: {fileID: 0}
   detectionFill: {fileID: 1553512650584779745}
   detectionTime: 1

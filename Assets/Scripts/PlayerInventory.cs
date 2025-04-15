@@ -5,6 +5,7 @@ public class PlayerInventory : MonoBehaviour
     public bool hasKey = false;  // Tracks if the player has collected the key
     public bool hasCard = false; // Tracks if the player has collected the card
     public bool hasKeyCard = false; //Tracks if player has green key card
+    public AudioSource Card; 
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -20,6 +21,7 @@ public class PlayerInventory : MonoBehaviour
         if (other.CompareTag("Card") && !hasCard)
         {
             hasCard = true;
+            Card.Play();
             Destroy(other.gameObject); // Remove the card from the scene
             Debug.Log("Card collected!");
         }
@@ -27,6 +29,7 @@ public class PlayerInventory : MonoBehaviour
         if (other.CompareTag("KeyCard") && !hasKeyCard)
         {
             hasKeyCard = true;
+            Card.Play();
             Destroy(other.gameObject); // Remove the key from the scene
             Debug.Log("KeyCard collected!");
         }

@@ -9,6 +9,7 @@ public class LeverController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private bool playerInRange = false;
     private bool used = false;
+    public AudioSource LeverPull;
 
     void Start()
     {
@@ -25,6 +26,7 @@ public class LeverController : MonoBehaviour
         used = true;
 
         leverAnimator.enabled = true;
+        LeverPull.Play();
         leverAnimator.SetTrigger("Pull");
 
         // Disable the entire laser GameObject

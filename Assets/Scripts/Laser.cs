@@ -32,10 +32,21 @@ public class Laser : MonoBehaviour
             if (hit.collider.CompareTag("Player") && disableTimer <= 0f)
             {
                 Debug.Log("Laser hit the player!");
+
+
+                Debug.Log($"Laser '{gameObject.name}' hit the player at position {hit.point}");
+
                 TriggerGameOver();
                 break;
             }
         }
+
+        //if (hit.collider.CompareTag("Player") && disableTimer <= 0f)
+        //{
+        //    Debug.Log($"Laser '{gameObject.name}' hit the player at position {hit.point}");
+        //    TriggerGameOver();
+        //    break;
+        //}
 
         // Mute or unmute the audio based on whether the laser is blocked
         if (Audio != null)

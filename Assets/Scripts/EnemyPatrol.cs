@@ -157,18 +157,12 @@ public class EnemyPatrol : MonoBehaviour
 
             if (playerDetectedInOverlap)
             {
-                // **NEW**: Line-of-sight check (Raycast) for obstacles
-                RaycastHit2D hitInfo = Physics2D.Raycast(
-                    visionOrigin.position,
-                    directionToPlayer,
-                    distanceToPlayer,
-                    obstacleLayer
-                );
+                // Line-of-sight check for obstacles
+                RaycastHit2D hitInfo = Physics2D.Raycast(visionOrigin.position, directionToPlayer, distanceToPlayer, obstacleLayer);
 
                 if (hitInfo.collider == null)
                 {
                     // Means Raycast hit nothing, so no obstacle is in the way
-                    // => we can see the player
                     isPlayerDetected = true;
                     lastKnownPlayerPosition = player.position;
                     isInvestigating = false;

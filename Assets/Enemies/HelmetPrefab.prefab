@@ -178,7 +178,7 @@ MonoBehaviour:
   - {fileID: 5195168370850891687}
   - {fileID: 4566959699485091154}
   player: {fileID: 0}
-  speed: 1.4
+  speed: 1.6
   visionLength: 3.7
   visionAngle: 90
   obstacleLayer:

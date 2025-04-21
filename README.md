@@ -28,7 +28,7 @@ The game emphasizes stealth, environmental awareness, and creative problem-solvi
 ### 4. **UI & Game States**
 - Main menu, pause menu, and game over screen implemented.
 - Clear feedback when player is detected.
-- Simple HUD showing collected keys/cards.
+
 
 ---
 

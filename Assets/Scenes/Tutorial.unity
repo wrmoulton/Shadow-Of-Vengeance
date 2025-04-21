@@ -5081,7 +5081,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 981586306}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &415690801
+--- !u!114 &415690804
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5090,7 +5090,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 415690788}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96df7cdbd6ef0f84e992293f4474f0cb, type: 3}
+  m_Script: {fileID: 11500000, guid: b1dc8d564d70212df9c03b3b9468ae45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
@@ -9391,7 +9391,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -24.202, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.32, y: -5.57}
+  m_AnchoredPosition: {x: 3.13, y: -5.57}
   m_SizeDelta: {x: 10, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &813504383
@@ -16829,7 +16829,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: 5ae1d30552a9505499bb5d56c1dd5522,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 415690801}
+      addedObject: {fileID: 415690804}
   m_SourcePrefab: {fileID: -8435245712485981826, guid: 5ae1d30552a9505499bb5d56c1dd5522,
     type: 3}
 --- !u!1 &984476394
@@ -17239,7 +17239,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96df7cdbd6ef0f84e992293f4474f0cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
 --- !u!70 &996609015
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

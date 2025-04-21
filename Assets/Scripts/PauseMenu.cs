@@ -18,7 +18,7 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenu.SetActive(false);
         optionsMenu.SetActive(false);
-        Cursor.visible = false;
+        Cursor.visible = true;
         audioSource = GetComponent<AudioSource>();
     }
 
